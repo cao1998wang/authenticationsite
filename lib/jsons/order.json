@@ -1,0 +1,42 @@
+{
+    "title": "Order",
+
+    "type": "object",
+
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "channel": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "currency": {
+            "type": "string"
+        },
+        "placed_on": {
+            "$ref": "DateTime"
+        },
+        "token": {
+            "type": "string"
+        },
+        "shipping_instructions": {
+            "type": "string"
+        },
+        "totals": {
+            "$ref": "OrderTotal"
+        },
+        "shipping_address": {
+            "$ref": "Address"
+        },
+        "billing_address": {
+            "$ref": "Address"
+        }
+    },
+    "required": ["id", "status", "channel", "currency", "placed_on"]
+}

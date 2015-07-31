@@ -1,0 +1,195 @@
+en:
+  admin:
+    js:
+      present_and_change: Present & Change
+    actions:
+      send_to_flow:
+        title: "Send to flow %{model_label_plural}"
+        menu: "Send %{model_label_plural} to flow"
+        breadcrumb: "Send %{model_label_plural} to flow"
+        link: "Send found %{model_label_plural} to flow"
+        bulk_link: "Send selected %{model_label_plural} to a flow"
+        done: "%{model_label_plural} were send to flow"
+        send_to_flow_help: "Choose the flow to send models data"
+        action_name: "Send"
+        selector_label: "Send to flow"
+      test_transformation:
+        title: "Test transformation"
+        menu: "Test transformation"
+        breadcrumb: "Test transformation"
+        action_name: "Test"
+        sample_data: "Sample data"
+        result: "Result"
+      load_model:
+        title: "Load '%{object_label}'"
+        menu: "Load"
+        breadcrumb: "Load"
+      shutdown_model:
+        title: "Shutdown '%{object_label}'"
+        menu: "Shutdown"
+        breadcrumb: "Shutdown"
+        shutting_down: "Shutting down '%{model_name}' will also"
+        shutdown_data_types: "shutdown %{shutdown_count} data types"
+        reload_data_types: "reload %{reload_count} data types"
+      switch_navigation:
+        show:
+          title: "Show navigation link"
+          menu: "Show navigation link"
+          breadcrumb: "Show navigation link"
+        hide:
+          title: "Hide navigation link"
+          menu: "Hide navigation link"
+          breadcrumb: "Hide navigation link"
+      data_type:
+        title: "Data type"
+        menu: "Data type"
+        breadcrumb: "Data type"
+      import:
+        title: "Import"
+        menu: "Import"
+        breadcrumb: "Import"
+        file_content_label: "File content"
+        submit: "Import"
+        done: "created"
+      edi_export:
+        title: "Export"
+        menu: "Export"
+        breadcrumb: "Export"
+        submit: "Export"
+        done: "exported"
+        bulk_link: "Export selected %{model_label_plural}"
+      import_schema:
+        title: "Import"
+        menu: "Import"
+        breadcrumb: "Import"
+        file_content_label: "File content"
+        submit: "Import"
+        done: "created"
+      delete_all:
+        title: "Delete all"
+        menu: "Delete all"
+        breadcrumb: "Delete all"
+        are_you_sure: "Are you sure you want to delete all the %{model_label_plural}?"
+        will_be_deleted: "objects will be deleted"
+        done: "deleted"
+      new_wizard:
+        title: "New"
+        menu: "Add new"
+        breadcrumb: "New"
+        next: "Next"
+        submit: "Save"
+        done: "created"
+      edit_translator:
+        title: "Edit"
+        menu: "Edit"
+        breadcrumb: "Edit"
+        next: "Next"
+        done: "updated"
+      translator_update:
+        title: "Update"
+        menu: "Update"
+        breadcrumb: "Update"
+        done: "updated"
+        submit: "Update"
+        bulk_link: "Update selected %{model_label_plural}"
+      convert:
+        title: "Convert"
+        menu: "Convert"
+        breadcrumb: "Convert"
+        done: "converted"
+        submit: "Convert"
+        bulk_link: "Convert selected %{model_label_plural}"
+      delete_schema:
+        title: "Delete Schema '%{object_label}'"
+        menu: "Delete"
+        breadcrumb: "Delete"
+      delete_library:
+        title: "Delete Library '%{object_label}'"
+        menu: "Delete"
+        breadcrumb: "Delete"
+      confirmation:
+        are_you_sure: "Are you sure you want to proceed?"
+      shutdown_and_reload:
+        shutdown_data_types: "shutdown %{shutdown_count} data types"
+        delete_data_types_and_records: "delete %{data_type_count} data types including %{records_count} records"
+        another: "Another %{count}"
+        delete_schemas: "delete %{schemas_count} schemas"
+        delete_data_types: "delete %{data_type_count} data types"
+        shutdown_data_types: "shutdown %{shutdown_count} data types"
+        reload_data_types: "reload %{reload_count} data types"
+        records: "records"
+      action_will:
+        also: 'These action will also'
+      memory_usage:
+        title: "Memory Usage"
+        menu: "Memory"
+        breadcrumb: "Memory"
+        model: "Model"
+        used_memory: "Used memory"
+      disk_usage:
+        title: "Disk Usage"
+        menu: "Disk"
+        breadcrumb: "Disk"
+        model: "Collection"
+        used_memory: "Space used"
+      bulk_share:
+        title: "Share %{model_label_plural}"
+        bulk_link: "Share selected %{model_label_plural}"
+        menu: "Share"
+        breadcrumb: "Share"
+        submit: "Share"
+        done: "created"
+      simple_share:
+        title: "Share %{model_label} '%{object_label}'"
+        menu: "Share"
+        breadcrumb: "Share"
+        submit: "Share"
+        done: "created"
+      pull_collection:
+        title: "Pull Collection '%{object_label}'"
+        menu: "Pull"
+        breadcrumb: "Pull"
+        submit: "Pull"
+        done: "pulled"
+        fill_parameters: "Please fill the following parameters to pull the collection"
+        update_warning: "The following objects will be updated"
+        ready: "Ready to pull!"
+        nothing_to_pull: "Nothing to pull from here"
+        fixed_errors_header: "The following errors where fixed when pulling the collection"
+        missing_parameters: "Missing parameters"
+      retry_notification:
+        title: "Retry"
+        menu: "Retry"
+        breadcrumb: "Retry"
+        submit: "Retry"
+        done: "retried"
+      new_file_model:
+        title: "New File Data Type"
+        menu: "Add new"
+        breadcrumb: "New"
+        submit: "Save"
+        done: "created"
+      upload_file:
+        title: "Upload file on '%{model_label_plural}'"
+        menu: "Upload"
+        breadcrumb: "Upload"
+        submit: "Upload"
+        done: "uploaded"
+      download_file:
+        title: "Download '%{object_label}'"
+        menu: "Download"
+        breadcrumb: "Download"
+        submit: "Download"
+        done: "downloaded"
+      delete_data_type:
+        title: "Delete %{model_label} '%{object_label}'"
+        menu: "Delete"
+        breadcrumb: "Delete"
+      process_flow:
+        title: "Process"
+        menu: "Process"
+        done: "processed"
+      build_gem:
+        title: "Build Gem"
+        menu: "Build Gem"
+        done: "build"

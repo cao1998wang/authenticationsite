@@ -1,0 +1,53 @@
+{
+    "title": "Product",
+
+    "type": "object",
+
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "sku": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "price": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true
+        },
+        "cost_price": {
+            "type": "number"
+        },
+        "available_on": {
+            "$ref": "Date"
+        },
+        "permalink": {
+            "type": "string"
+        },
+        "meta_description": {
+            "type": "string"
+        },
+        "meta_keywords": {
+            "type": "string"
+        },
+        "shipping_category": {
+            "type": "string"
+        },
+        "options": {
+            "type": "array"
+        },
+        "taxons": {
+            "type": "array"
+        },
+        "properties": {
+            "type": "object"
+        }
+    },
+    "required": ["id", "name", "price", "available_on", "shipping_category"]
+}
