@@ -415,14 +415,15 @@ RailsAdmin.config do |config|
       label "Credentials"
     end
     configure :key, :string do
-      visible { bindings[:view]._current_user.has_role? :admin }
+      # visible { bindings[:view]._current_user.has_role? :admin }
       html_attributes do
         {maxlength: 30, size: 30}
       end
       group :credentials
     end
     configure :token, :text do
-      visible { bindings[:view]._current_user.has_role? :admin }
+#      visible { bindings[:view]._current_user.has_role? :admin }
+      # visible {1 = 1 } 
       html_attributes do
         {cols: '50', rows: '1'}
       end
@@ -434,15 +435,15 @@ RailsAdmin.config do |config|
     end
     configure :parameters do
       group :parameters
-      visible { bindings[:view]._current_user.has_role? :admin }
+#      visible { bindings[:view]._current_user.has_role? :admin }
     end
     configure :headers do
       group :parameters
-      visible { bindings[:view]._current_user.has_role? :admin }
+#      visible { bindings[:view]._current_user.has_role? :admin }
     end
     configure :template_parameters do
       group :parameters
-      visible { bindings[:view]._current_user.has_role? :admin }
+#      visible { bindings[:view]._current_user.has_role? :admin }
     end
 
     show do

@@ -1,0 +1,18 @@
+Overwriting existing field number in class User.
+Overwriting existing field number in class Setup::Connection.
+Overwriting existing field name in class Setup::SharedCollection.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8083ms
+  MOPED: 127.0.0.1:27017 QUERY        database=cenithub_test collection=accounts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2512ms
+  MOPED: 127.0.0.1:27017 QUERY        database=cenithub_test collection=system.namespaces selector={:name=>{"$not"=>/cenithub_test\.system\.|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.4439ms
+Overwriting existing field number in class User.
+Overwriting existing field number in class Setup::Connection.
+Overwriting existing field name in class Setup::SharedCollection.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8305ms
+  MOPED: 127.0.0.1:27017 QUERY        database=cenithub_test collection=accounts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3584ms
+  MOPED: 127.0.0.1:27017 QUERY        database=cenithub_test collection=system.namespaces selector={:name=>{"$not"=>/cenithub_test\.system\.|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4175ms
+Overwriting existing field number in class User.
+Overwriting existing field number in class Setup::Connection.
+Overwriting existing field name in class Setup::SharedCollection.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7427ms
+  MOPED: 127.0.0.1:27017 QUERY        database=cenithub_test collection=accounts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=cenithub_test collection=system.namespaces selector={:name=>{"$not"=>/cenithub_test\.system\.|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3943ms
