@@ -5,6 +5,10 @@ module Api::V1
     rescue_from Exception, :with => :exception_handler
     respond_to :json
 
+    def mee
+       'this is response'
+    end
+
     def index
       @items =
         if @criteria.present?
@@ -108,6 +112,27 @@ module Api::V1
       render json: response
     end
 
+    def me
+          key = params.delete('X-User-Access-Key')
+     key = request.headers['X-User-Access-Key'] || Key 
+      #token = params.delete('X-User-Access-Token')
+      #token = request.headers['X-User-Access-Token'] || token
+     user = User.where(key: key).first 
+    #  render json: JSON.parse(user)
+     render json: user.to_json 
+end
+    def meeee
+
+
+  #    token = params.delete('X-User-Access-Token')
+   #   token = request.headers['X-User-Access-Token'] || token
+emailp = 'one@yahoo.ca'      
+user = User.where(email: emailp).first 
+      if user         
+#        return JSON.parse(user)
+      'this is response'    
+      end
+end
     protected
 
     def authorize

@@ -25,10 +25,23 @@ class ApplicationController < ActionController::Base
       if current_user && current_user.account.nil?
          current_user.add_role(:admin) unless current_user.has_role?(:admin)
          current_user.account = Account.create_with_owner(owner: current_user)
-         current_user.save(validate: false)
+         current_user.save(validate: false) 
+         cookies[:api_key] = {
+             :value => 'dsfsdfsdf',
+             :expires => 1.year.from_now,
+             :domain => 'www.push.com'} 
+#         sdfsf[:one] = "sdfsfsf"
        end 
       Account.current = current_user.account if signed_in?
-      yield
+      if signed_in?
+cookies[:api_key] = {
+             :value => "#{current_user.number}" +" " + "#{current_user.authentication_token}",
+             :expires => 1.year.from_now,
+             :domain => '52.21.69.95'}
+        end
+#         sdfsf[:one] = "sdfsfsf"
+    
+  yield
     ensure
       Account.current = nil
     end
